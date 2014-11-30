@@ -6,7 +6,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link type="text/css" href="<?php echo get_template_directory_uri(); ?>style.css">
+	<link type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script> -->
 </head>
 
