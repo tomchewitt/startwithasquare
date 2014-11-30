@@ -22,17 +22,48 @@ html, body {
 }
 
 body {
-	background: $lightgrey;
+	background: $midred;
 	color: $darkgrey;
 }
 
+p {
+	padding: 0 0 20px 0;
+}
+
+a {
+	text-decoration: none;
+	color: $midred;
+}
 
 // *****************************************************************
 // HEADER
 // *****************************************************************
-header {
+section.header {
 	width: 100%;
 	background: $midred;
+	color: $lightred;
+	height: 80px;
+	text-align: center;
+
+	header {
+		margin: 0 auto;
+		text-align: left;
+		width: 750px;
+	}
+
+	h1 {
+		float: left;
+		@include text-replacement();
+	}
+
+	img {
+		height: 40px;
+		margin: 20px 0;
+	}
+
+	.beta {
+		float: right;
+	}
 }
 
 // *****************************************************************
@@ -40,8 +71,173 @@ header {
 // *****************************************************************
 footer {
 	width: 100%;
-	height: 100px;
 	display: block;
+	color: $lightred;
+	padding: 30px 0;
+	text-align: center;
+}
+
+// *****************************************************************
+// ARTICLE LIST
+// *****************************************************************
+.wrap {
+	background: $lightgrey;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0 10px 0;
+	overflow: auto;
+}
+
+.post {
+	text-align: left;
+	display: block;
+	width: 750px;
+	background: $white;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease-out;
+
+	h1 {
+		// border-left: solid 2px $midred;
+		padding-left: 14px;
+		margin-bottom: 20px;
+		// background: #CCC;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 1px;
+			height: 30px;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: $midred;
+		}
+
+		&::after {
+			content: '';
+			width: 30px;
+			height: 1px;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: $midred;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		// display: block;
+		color: $darkgrey;
+	}
+
+	.meta {
+		color: $midgrey;		
+	}
+}
+
+.genericon {
+	display: inline-block;	
+	vertical-align: middle;
+
+	&::before {
+		vertical-align: middle;
+	}
+}
+.meta-info {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.post-inner {
+	display: block;
+	padding: 30px;
+	position: relative;
+
+	.read-more {
+		text-align: center;
+		display: block;
+		position: absolute;
+		bottom: -100px;
+		transition: all 0.2s ease-out;
+
+		.genericon {
+			color: $white;
+		}
+	}
+}
+
+.post-content {
+	padding-top: 20px;
+	transition: all 0.2s ease-out;
+}
+
+// HOVERS
+.post-list:hover {
+	transform: scale(1.03);
 	background: $midred;
-	color: $white;
+
+	h1 {
+		&::before, &::after {
+			background: $white;
+		}
+	}
+	
+	a {
+		color: $white;
+	}
+
+	.meta {
+		color: $white;
+		opacity: 0.7;
+	}
+
+	.post-content {
+		opacity: 0.1;
+	}
+
+	.read-more {
+		bottom: 40px;
+	}
+}
+
+.breadcrumbs {
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+	color: $midgrey;
+
+	span {
+		padding: 0 5px;
+	}
+}
+
+
+@media screen and (max-width: 750px) {
+	
+	section.header header, .post, .breadcrumbs {
+		width: 90%;
+	}
+
+	header img {
+		max-width: 80%;
+	}
+
+	.beta {
+		display: none;
+	}
+
+	.post h1 {
+		font-size: 2em;
+		line-height: 1em;
+		padding: 0 0 7px 7px;
+	}
+
+
+
 }
