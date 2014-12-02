@@ -11,8 +11,14 @@ body {
 h2 {
 	font-weight: 100;
 	font-size: 1.4em;
-	letter-spacing: 0.02em;
+	// letter-spacing: 0.02em;
 	text-transform: uppercase;
+}
+
+blockquote {
+	font-weight: 100em;
+	font-size: 1.2em;
+	font-style: italic;
 }
 
 header {

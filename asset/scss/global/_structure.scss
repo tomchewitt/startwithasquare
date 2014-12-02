@@ -40,6 +40,38 @@ h2 {
 	padding: 20px 0 15px 0;
 }
 
+blockquote {
+	color: $midgrey;
+	width: 70%;
+	margin: 0 12%;
+	padding: 20px 3%;
+
+	&::before {
+		content: '';
+		width: 30px;
+		height: 30px;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-left: solid 1px $midred;
+		border-bottom: solid 1px $midred;
+	}
+
+	&::after {
+		content: '';
+		width: 30px;
+		height: 30px;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-right: solid 1px $midred;
+		border-top: solid 1px $midred;
+	}
+
+}
+
 // *****************************************************************
 // HEADER
 // *****************************************************************
@@ -113,24 +145,14 @@ footer {
 
 		&::before {
 			content: '';
-			width: 1px;
+			width: 30px;
 			height: 30px;
 			display: block;
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			background: $midred;
-		}
-
-		&::after {
-			content: '';
-			width: 30px;
-			height: 1px;
-			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background: $midred;
+			border-left: solid 1px $midred;
+			border-bottom: solid 1px $midred;
 		}
 	}
 
