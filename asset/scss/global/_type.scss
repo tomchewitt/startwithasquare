@@ -49,6 +49,12 @@ header {
 
 .single a {
 	font-weight: 700;
+	transition: all .2s ease-out;
+
+	&:hover {
+		color: $white;
+		background: $midred;
+	}
 }
 
 .breadcrumbs {
