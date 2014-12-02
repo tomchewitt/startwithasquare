@@ -45,6 +45,7 @@ blockquote {
 	width: 70%;
 	margin: 0 12%;
 	padding: 20px 3%;
+	position: relative;
 
 	&::before {
 		content: '';
