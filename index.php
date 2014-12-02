@@ -15,7 +15,7 @@
  					</div>
 
 				 	<section class="post-content">
-				 		<?php the_content('',FALSE,''); ?>
+				 		<?php the_content(); ?>
 				 	</section>
 
 				 	<span class="read-more"><span class="genericon genericon-standard"></span> <span class="meta-info">READ MORE</span></span>
