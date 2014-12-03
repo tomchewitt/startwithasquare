@@ -216,8 +216,9 @@ footer {
 	background: $midred;
 
 	h1 {
-		&::before, &::after {
-			background: $white;
+		&::before {
+			border-left: solid 1px $white;
+			border-bottom: solid 1px $white;
 		}
 	}
 	
