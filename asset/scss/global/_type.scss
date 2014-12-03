@@ -11,20 +11,20 @@ html, html a {
 body {
 	font-family: "Lato", Helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 1em;
-	line-height: 1.6em;
+	font-size: 1.2em;
+	line-height: 1.7em;
 }
 
 h2 {
 	font-weight: 100;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	// letter-spacing: 0.02em;
 	text-transform: uppercase;
 }
 
 blockquote {
 	font-weight: 100em;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-style: italic;
 }
 
@@ -41,19 +41,19 @@ header {
 
 .post {
 	h1 {
-		font-size: 2.2em;
+		font-size: 2.4em;
 		font-weight: 100;
 		line-height: 1.7em;
 	}
 
 	.meta {
 		display: block; 
-		font-size: 0.7em;
-		line-height: 1.2em;
+		font-size: 1em;
+		line-height: 1.4em;
 
 		.genericon {
-			line-height: 1.2em;
-			font-size: 1.2em;
+			line-height: 1.4em;
+			font-size: 1.4em;
 		}
 
 	}
