@@ -61,7 +61,7 @@ blockquote {
 		bottom: 0;
 		left: 0;
 		border-left: solid 1px $midred;
-		border-bottom: solid 1px $midred;
+		border-top: solid 1px $midred;
 	}
 
 	&::after {
@@ -73,7 +73,7 @@ blockquote {
 		top: 0;
 		right: 0;
 		border-right: solid 1px $midred;
-		border-top: solid 1px $midred;
+		border-bottom: solid 1px $midred;
 	}
 
 }
