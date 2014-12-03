@@ -58,7 +58,7 @@ blockquote {
 		height: 30px;
 		display: block;
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		left: 0;
 		border-left: solid 1px $midred;
 		border-top: solid 1px $midred;
@@ -70,7 +70,7 @@ blockquote {
 		height: 30px;
 		display: block;
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		right: 0;
 		border-right: solid 1px $midred;
 		border-bottom: solid 1px $midred;
