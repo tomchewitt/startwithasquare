@@ -1,0 +1,24 @@
+<p>It's here, it's finally here. No it's not the new Star Wars trailer (although that was incredible), it's my new portfolio! After a lot of tweaks, changes and distractions, my new portfolio has gone live.</p>
+<p>A new URL, some new branding, new colours (I had been fairly monochromatic with a base of #09F for quite some time), lean, minimal code output and more SVG power than you can shake a stick at - have all accumulated into the new slick home for me, Tom Hewitt and my creations.</p>
+
+<blockquote><a href="http://tomdoes.digital" target="_blank">http://tomdoes.digital</a></blockquote>
+
+<h2>THE POWER OF 3</h2>
+
+<p>My new branding focuses on the humble equilateral triangle. What's great about this is the easy was to embed all manor of triangle based icons and logos by simply copying the vector graphics from Illustrator and pasting them straight into Sublime (my text editor of choice) as embedded SVGs. There's also the trick of making a full triangle with nothing more than some clever borders in CSS. I'm a huge fan of simplicity and cohesive branding staples throughout a website, so after a lot of thought around logos and testing with different ideas, I believe the triangle works very well in my new site.</p>
+
+<h2>JQUERY, YOU'RE NOT WELCOME HERE</h2>
+
+<p>Although I'm a big fan of how jQuery makes easy work of a lot of javascript functionality, it's animation performance is easily outdone. Making the decision to use Greensock's JSAP library to control my animation, jQuery was really just there as a selector library... and it's rather bloaty just for that. With jQuery's absence, I can focus on creating a leaner, modular approach to my javascript.</p>
+
+<p>This all starts with the nuts and bolts that pulls everything together, in my custom ‘loader' script that dynamically pulls in the page, but updates the URL with javascript's built in push state function. I found a lot of great resources for this through <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history" target="_blank">Mozilla's Developer Network's</a> articles on browser history manipulation, and their <a href="https://github.com/giabao/mdn-ajax-nav-example" target="_blank">demo ajax site</a> script makes up a large foundation to what I'm using.</p>
+
+<h2>BUILD IT</h2>
+
+<p>The power of Grunt as a task runner has been improving my workflow for quite a while now. For version control I'm using <a href="http://github.com" target="_blank">Github</a>, and this combined with a relatively new service that I've found to work incredibly well is <a href="http://dploy.io" target="_blank">dploy.io</a>.</p>
+
+<p>This is a deployment service that links to Github (among other services) and will sync repositories with live and development web servers. This means that a simple push to my Github repo, and a few seconds later those changes are live on my website. What luxury. It's eradicated my need for any kind of file management on my web server as live and dev instances of my site are tied completely to Github branches. For one repository, Dploy is completely free - go check it out.</p>
+
+<p>My portfolio source code is available on Github here: <a href="http://github.com/tomchewitt/tomdoes/" target="_blank">http://github.com/tomchewitt/tomdoes/</a></p>
+
+<p>Br sure to go check out the live version here: <a href="http://tomdoes.digital" target="_blank">http://tomdoes.digital</a>.</p>
